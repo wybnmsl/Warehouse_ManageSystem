@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | MissionTables</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jsGrid -->
+  <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid.min.css">
+  <link rel="stylesheet" href="../../plugins/jsgrid/jsgrid-theme.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index2.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index2.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Warehouse MS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">moguwai</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Mainboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Tables
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>DataTables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>MissionTables</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Orders
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Check Orders</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Check Return Orders</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Projects
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../examples/projects.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Projects</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Project Add</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/warehousecheck.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Project Warehouse</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>MissionTables</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">MissionTables</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">MissionTables</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div id="jsGrid1"></div>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Warehouse MS.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jsGrid -->
+<script src="../../plugins/jsgrid/demos/db.js"></script>
+<script src="../../plugins/jsgrid/jsgrid.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+
+
+  $.ajax({
+    url:"/WMS/pages/tables/jsgrid.php",
+    data: {
+    },
+    async:false,
+    type:"GET",
+    dataType: "json",
+    success:function(result){
+      //alert("success");
+      console.log("This is result");
+      console.log(result);
+      var arr = operateresult(result);
+      generateTable(arr);
+      //generateTable(result);
+      //console.log(result['excel'][0]['新到产品ID']);
+
+    },
+    error:function(result){
+      alert("get failed!");
+    }
+  });
+
+  function operateresult(result) {
+    var arr = new Array();
+      var des = null;
+        for(var j=1;j<=12;j++){
+          des = 'D';
+          for(var k =1;k<=result['map'][des][j];k++){
+            var object = new Array();
+            object['depository'] = des;
+            object['shelf'] = j;
+            object['id'] = result['mapid'][des][j];
+            arr.push(object);
+          }
+          des = 'C';
+          for(var k =1;k<=result['map'][des][j];k++){
+            var object = new Array();
+            object['depository'] = des;
+            object['shelf'] = j;
+            object['id'] = result['mapid'][des][j];
+            arr.push(object);
+          }
+        }
+
+        for(var j=12;j>=1;j--){
+          des = 'B'
+          for(var k =1;k<=result['map'][des][j];k++){
+            var object = new Array();
+            object['depository'] = des;
+            object['shelf'] = j;
+            object['id'] = result['mapid'][des][j];
+            arr.push(object);
+          }
+          des = 'A'
+          for(var k =1;k<=result['map'][des][j];k++){
+            var object = new Array();
+            object['depository'] = des;
+            object['shelf'] = j;
+            object['id'] = result['mapid'][des][j];
+            arr.push(object);
+          }
+
+        }
+    console.log("This is arr");
+    console.log(arr.length);
+    // while(arr.length>0){
+    //   var object = arr.pop();
+    //   console.log(object);
+    // }
+    return arr;
+  }
+
+
+
+  function generateTable(arr){
+    var cnt = Math.ceil(arr.length/5);
+    var temp = new Array();
+    for(var i=0; i<cnt-1;i++){
+      temp[i] = new Array();
+      var flag = new Array();
+      flag['A'] = 0; flag['B'] = 0; flag['C'] = 0; flag['D'] = 0;
+      temp[i]['Address'] = "";
+      var object = arr.pop();
+      temp[i]['Address'] = temp[i]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"   ";
+      flag[object['depository']] = 1;
+      object = arr.pop();
+      temp[i]['Address'] = temp[i]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"</br>";
+      flag[object['depository']] = 1;
+      object = arr.pop();
+      temp[i]['Address'] = temp[i]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"   ";
+      flag[object['depository']] = 1;
+      object = arr.pop();
+      temp[i]['Address'] = temp[i]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"</br>";
+      flag[object['depository']] = 1;
+      object = arr.pop();
+      temp[i]['Address'] = temp[i]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"   ";
+      flag[object['depository']] = 1;
+      temp[i]['Name'] = "Operator " + i.toString();
+      if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 0){//0000
+        temp[i]['Passageway'] = "Wrong";
+        temp[i]['Depository'] = "Wrong";
+      }
+      else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 1){//0001
+        temp[i]['Passageway'] = "Passageway: 3";
+        temp[i]['Depository'] = 'D';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 0){//0010
+        temp[i]['Passageway'] = "Passageway: 2";
+        temp[i]['Depository'] = 'C';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 1){//0011
+        temp[i]['Passageway'] = "Passageway: 3";
+        temp[i]['Depository'] = 'C&&D';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 0){//0100
+        temp[i]['Passageway'] = "Passageway: 2";
+        temp[i]['Depository'] = 'B';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//0101
+        temp[i]['Passageway'] = "Passageway: 2&&3";
+        temp[i]['Depository'] = 'B&&D';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 0){//0110
+        temp[i]['Passageway'] = "Passageway: 2";
+        temp[i]['Depository'] = 'B&&C';
+      }
+      else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 1){//0111
+        temp[i]['Passageway'] = "Passageway: 2&&3";
+        temp[i]['Depository'] = 'B&&C&&D';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 0){//1000
+        temp[i]['Passageway'] = "Passageway: 1";
+        temp[i]['Depository'] = 'A';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 1){//1001
+        temp[i]['Passageway'] = "Passageway: 1&&3";
+        temp[i]['Depository'] = 'A&&D';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 0){//1010
+        temp[i]['Passageway'] = "Passageway: 1&&2";
+        temp[i]['Depository'] = 'A&&C';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 1){//1011
+        temp[i]['Passageway'] = "Passageway: 1&&3";
+        temp[i]['Depository'] = 'A&&C&&D';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 0){//1100
+        temp[i]['Passageway'] = "Passageway: 1";
+        temp[i]['Depository'] = 'A&&B';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//1101
+        temp[i]['Passageway'] = "Passageway: 1&&3";
+        temp[i]['Depository'] = 'A&&B&&D';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 0){//1110
+        temp[i]['Passageway'] = "Passageway: 1&&2";
+        temp[i]['Depository'] = 'A&&B&&C';
+      }
+      else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//1111
+        temp[i]['Passageway'] = "Passageway: 1&&3";
+        temp[i]['Depository'] = 'A&&B&&C&&D';
+      }
+
+      temp[i]['Finished'] = false;
+    }
+    while(arr.length>0){
+      var object = arr.pop();
+      temp[cnt-1] = new Array();
+      var flag = new Array();
+      flag['A'] = 0; flag['B'] = 0; flag['C'] = 0; flag['D'] = 0;
+      temp[cnt-1]['Name'] = "Operator " + (cnt-1).toString();
+
+      temp[cnt-1]['Address'] = "";
+      temp[cnt-1]['Address'] = temp[cnt-1]['Address']+"Cloth ID: "+object['id']+"  Position:  ("+object['depository']+","+object['shelf']+")"+"</br>";
+      flag[object['depository']] = 1;
+      temp[cnt-1]['Finished'] = false;
+    }
+    if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 0){//0000
+      temp[cnt-1]['Passageway'] = "Wrong";
+      temp[cnt-1]['Depository'] = "Wrong";
+    }
+    else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 1){//0001
+      temp[cnt-1]['Passageway'] = "Passageway: 3";
+      temp[cnt-1]['Depository'] = 'D';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 0){//0010
+      temp[cnt-1]['Passageway'] = "Passageway: 2";
+      temp[cnt-1]['Depository'] = 'C';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 1){//0011
+      temp[cnt-1]['Passageway'] = "Passageway: 3";
+      temp[cnt-1]['Depository'] = 'C&&D';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 0){//0100
+      temp[cnt-1]['Passageway'] = "Passageway: 2";
+      temp[cnt-1]['Depository'] = 'B';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//0101
+      temp[cnt-1]['Passageway'] = "Passageway: 2&&3";
+      temp[cnt-1]['Depository'] = 'B&&D';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 0){//0110
+      temp[cnt-1]['Passageway'] = "Passageway: 2";
+      temp[cnt-1]['Depository'] = 'B&&C';
+    }
+    else if(flag['A'] == 0 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 1){//0111
+      temp[cnt-1]['Passageway'] = "Passageway: 2&&3";
+      temp[cnt-1]['Depository'] = 'B&&C&&D';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 0){//1000
+      temp[cnt-1]['Passageway'] = "Passageway: 1";
+      temp[cnt-1]['Depository'] = 'A';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 0 &&  flag['D'] == 1){//1001
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&3";
+      temp[cnt-1]['Depository'] = 'A&&D';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 0){//1010
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&2";
+      temp[cnt-1]['Depository'] = 'A&&C';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 0 && flag['C'] == 1 &&  flag['D'] == 1){//1011
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&3";
+      temp[cnt-1]['Depository'] = 'A&&C&&D';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 0){//1100
+      temp[cnt-1]['Passageway'] = "Passageway: 1";
+      temp[cnt-1]['Depository'] = 'A&&B';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//1101
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&3";
+      temp[cnt-1]['Depository'] = 'A&&B&&D';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 1 &&  flag['D'] == 0){//1110
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&2";
+      temp[cnt-1]['Depository'] = 'A&&B&&C';
+    }
+    else if(flag['A'] == 1 && flag['B'] == 1 && flag['C'] == 0 &&  flag['D'] == 1){//1111
+      temp[cnt-1]['Passageway'] = "Passageway: 1&&3";
+      temp[cnt-1]['Depository'] = 'A&&B&&C&&D';
+    }
+
+    console.log(temp);
+    $(function () {
+      $("#jsGrid1").jsGrid({
+        height: "100%",
+        width: "100%",
+
+        sorting: true,
+        paging: true,
+
+        data: temp,
+        //data: db.clients,
+
+        fields: [
+          { name: "Name", type: "text", width: 50 },
+          { name: "Passageway", type: "number", width: 50 },
+          { name: "Address", type: "text", width: 300 },
+          { name: "Depository", type: "text" ,width: 30 },
+          { name: "Finished", type: "checkbox", title: "Pick Finished",width: 25 }
+        ]
+      });
+    });
+
+  };
+
+
+  function ArrayQueue(){
+    var arr = [];
+    //入队操作
+    this.push = function(element){
+      arr.push(element);
+      return true;
+    }
+    //出队操作
+    this.pop = function(){
+      return arr.shift();
+    }
+    //获取队首
+    this.getFront = function(){
+      return arr[0];
+    }
+    //获取队尾
+    this.getRear = function(){
+      return arr[arr.length - 1]
+    }
+    //清空队列
+    this.clear = function(){
+      arr = [];
+    }
+    //获取队长
+    this.size = function(){
+      return length;
+    }
+  }
+
+
+
+
+
+
+
+  // function generateTable(result){
+  //   var cnt = result['cnt'];
+  //   for(var i=1; i <= cnt;i++){
+  //     db.clients[i]['Name'] = "Operator " + i.toString();
+  //     db.clients[i]['Age'] = result[i]['orderamount'];
+  //     db.clients[i]['Country'] = "Operator " + i.toString();
+  //     db.clients[i]['Address'] = result[i]['orderid'];
+  //     db.clients[i]['Married'] = false;
+  //   }
+  //
+  //   $(function () {
+  //     $("#jsGrid1").jsGrid({
+  //       height: "100%",
+  //       width: "100%",
+  //
+  //       sorting: true,
+  //       paging: true,
+  //
+  //       data: db.clients,
+  //
+  //       fields: [
+  //         { name: "Name", type: "text", width: 50 },
+  //         { name: "Age", type: "number", width: 50 },
+  //         { name: "Address", type: "text", width: 100 },
+  //         { name: "Country", type: "text" ,width: 100 },
+  //         { name: "Married", type: "checkbox", title: "Pick Finished",width: 50 }
+  //       ]
+  //     });
+  //   });
+  //
+  // };
+
+
+
+  // $(function () {
+  //   $("#jsGrid1").jsGrid({
+  //       height: "100%",
+  //       width: "100%",
+  //
+  //       sorting: true,
+  //       paging: true,
+  //
+  //       data: db.clients,
+  //
+  //       fields: [
+  //           { name: "Name", type: "text", width: 50 },
+  //           { name: "Age", type: "number", width: 50 },
+  //           { name: "Address", type: "text", width: 100 },
+  //           { name: "Country", type: "text" ,width: 100 },
+  //           { name: "Married", type: "checkbox", title: "Pick Finished",width: 50 }
+  //       ]
+  //   });
+  // });
+</script>
+</body>
+</html>

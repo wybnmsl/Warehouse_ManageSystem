@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Add Clothes</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index2.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index2.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Warehouse MS</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Li Ming</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Mainboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../../index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Charts
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ChartJS</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Forms
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview ">
+              <li class="nav-item ">
+                <a href="../forms/editors.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Clothes</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../forms/validation.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Orders</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../forms/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add Batch Orders</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Tables
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>DataTables</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>MissionTables</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-envelope"></i>
+              <p>
+                Orders
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Check Orders</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Check Return Orders</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview ">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Projects
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../examples/projects.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Projects</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Project Add</p>
+                </a>
+              </li>
+              <!--              <li class="nav-item">-->
+              <!--                <a href="../examples/project-edit.html" class="nav-link">-->
+              <!--                  <i class="far fa-circle nav-icon"></i>-->
+              <!--                  <p>Project Edit</p>-->
+              <!--                </a>-->
+              <!--              </li>-->
+              <!--              <li class="nav-item">-->
+              <!--                <a href="../examples/project-detail.html" class="nav-link">-->
+              <!--                  <i class="far fa-circle nav-icon"></i>-->
+              <!--                  <p>Project Detail</p>-->
+              <!--                </a>-->
+              <!--              </li>-->
+            </ul>
+          </li>
+
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Add Clothes</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Add Clothes</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- jquery validation -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Add a new cloth<small> Admin Only</small></h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form" id="quickForm">
+                <div class="card-body">
+                  <div class="mainpart" id="divpart">
+                    <div class="form-group">
+                      <label for="username">Administrator's name</label>
+                      <input type="text" name="username" class="form-control" id="username" placeholder="Enter Administrator's name">
+                    </div>
+                    <div class="form-group" id="divend">
+                      <label for="useraddress">Administrator's password</label>
+                      <input type="password" name="useraddress"  class="form-control" id="useraddress" placeholder="Enter Administrator's password">
+                    </div>
+                  </div>
+                  <div class="form-group mb-0" id="divbegin">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
+                      <label class="custom-control-label" for="exampleCheck1">Input data obey the <a href="#">rule of input</a>.</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <!--                  <button type="submit" class="btn btn-primary" >Submit</button>-->
+                  <button type="button" class="btn btn-primary" id="submitdata">Submit</button>
+                  <!--                  <button type="button" class="btn btn-primary" id="submitdata2">Submit3</button> 测试warningmodel-->
+                  <!--                  <button type="button" class="btn btn-primary" id="submitdata3">Submit4</button> 测试dangermodel-->
+<!--                  <button type="button" class="btn btn-primary" id="status">status</button>-->
+                  <button type="button" class="btn btn-primary" id="open">open</button>
+                  <input type="file" id="excel-file" style="display: none">
+                  <input id="resurce" type="file" style="display: none">
+<!--                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger" id="dangermodel">-->
+<!--                    Launch Danger Modal-->
+<!--                  </button>-->
+<!--                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning" id="warningmodel">-->
+<!--                    Launch Warning Modal-->
+<!--                  </button>-->
+<!--                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success" id="successmodel">-->
+<!--                    Launch Success Modal-->
+<!--                  </button>-->
+                  <div class="float-right">
+                    <button type="button" class="btn btn-primary" id="addline">Add</button>
+                    <button type="button" class="btn btn-primary" id="deleteline">Delete</button>
+                  </div>
+                </div>
+              </form>
+
+<!--              <div class="modal fade" id="modal-warning">-->
+<!--                <div class="modal-dialog">-->
+<!--                  <div class="modal-content bg-warning">-->
+<!--                    <div class="modal-header">-->
+<!--                      <h4 class="modal-title">Warning Message</h4>-->
+<!--                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span></button>-->
+<!--                    </div>-->
+<!--                    <div class="modal-body">-->
+<!--                      <p >Warn to confirm</p>-->
+<!--                      <p id="warningmessage"></p>-->
+<!--                    </div>-->
+<!--                    <div class="modal-footer justify-content-between">-->
+<!--                      <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>-->
+<!--                      <button type="button" class="btn btn-outline-dark">Still confirm</button>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; /.modal &ndash;&gt;-->
+
+<!--              <div class="modal fade" id="modal-danger">-->
+<!--                <div class="modal-dialog">-->
+<!--                  <div class="modal-content bg-danger">-->
+<!--                    <div class="modal-header">-->
+<!--                      <h4 class="modal-title">Danger Message</h4>-->
+<!--                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                      </button>-->
+<!--                    </div>-->
+<!--                    <div class="modal-body">-->
+<!--                      <p >Forbid to confirm</p>-->
+<!--                      <p id="dangermessage"></p>-->
+<!--                    </div>-->
+<!--                    <div class="modal-footer justify-content-between">-->
+<!--                      <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>-->
+<!--                      &lt;!&ndash;                      <button type="button" class="btn btn-outline-light">Save changes</button>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; /.modal &ndash;&gt;-->
+
+<!--              <div class="modal fade" id="modal-success">-->
+<!--                <div class="modal-dialog">-->
+<!--                  <div class="modal-content bg-success">-->
+<!--                    <div class="modal-header">-->
+<!--                      <h4 class="modal-title">Success Modal</h4>-->
+<!--                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span></button>-->
+<!--                    </div>-->
+<!--                    <div class="modal-body">-->
+<!--                      <p>A new order has been created</p>-->
+<!--                      <p id="successmessage"></p>-->
+<!--                    </div>-->
+<!--                    <div class="modal-footer justify-content-between">-->
+<!--                      <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>-->
+<!--                      &lt;!&ndash;                      <button type="button" class="btn btn-outline-light">Save changes</button>&ndash;&gt;-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  &lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--              </div>-->
+<!--              &lt;!&ndash; /.modal &ndash;&gt;-->
+
+
+
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+          <!-- right column -->
+          <div class="col-md-6">
+
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2020 <a href="http://adminlte.io">Warehouse MS.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- jquery-validation -->
+<!--原本引用jquery.validate.min.js additional-methods.min.js-->
+<script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+<script src="../../plugins/jquery-validation/additional-methods.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+
+<script type="text/javascript" src="xlsx.core.min.js"></script>
+
+<script type="text/javascript">
+  // $(document).ready(function () {
+  //   $.validator.setDefaults({
+  //     submitHandler: function () {
+  //       alert( "Form successful submitted!" );
+  //     }
+  //   });
+  //
+  //   //origin validate pos
+  //
+  //
+  // });
+
+
+  // $('#quickForm').validate({
+  //   rules: {
+  //     username: {
+  //       required: true
+  //     },
+  //     useraddress: {
+  //       required: true
+  //       // minlength: 5
+  //     },
+  //     terms: {
+  //       required: true
+  //     },
+  //     inputid:{
+  //       required: true
+  //     },
+  //     inputamount:{
+  //       required: true
+  //     },
+  //   },
+  //   messages: {
+  //     username: {
+  //       required: "Please enter username"
+  //       // email: "Please enter a vaild email address"
+  //     },
+  //     useraddress: {
+  //       required: "Please provide user's address"
+  //       // minlength: "Your password must be at least 5 characters long"
+  //     },
+  //     inputid:{ //注释了jquery-validation的670行
+  //       required: "Please provide cloth's id"
+  //     },
+  //     inputamount:{
+  //       required: "Please provide cloth's amount"
+  //     },
+  //     terms: "Please accept our terms"
+  //   },
+  //   errorElement: 'span',
+  //   errorPlacement: function (error, element) {
+  //     error.addClass('invalid-feedback');
+  //     element.closest('.form-group').append(error);
+  //   },
+  //   highlight: function (element, errorClass, validClass) {
+  //     $(element).addClass('is-invalid');
+  //   },
+  //   unhighlight: function (element, errorClass, validClass) {
+  //     $(element).removeClass('is-invalid');
+  //   }
+  // });
+
+
+  $('#excel-file').change(function(e) {
+    var files = e.target.files;
+
+    var fileReader = new FileReader();
+    fileReader.onload = function(ev) {
+      try {
+        var data = ev.target.result,
+          workbook = XLSX.read(data, {
+            type: 'binary'
+          }), // 以二进制流方式读取得到整份excel表格对象
+          persons = []; // 存储获取到的数据
+      } catch (e) {
+        console.log('文件类型不正确');
+        return;
+      }
+
+      // 表格的表格范围，可用于判断表头是否数量是否正确
+      var fromTo = '';
+      // 遍历每张表读取
+      for (var sheet in workbook.Sheets) {
+        if (workbook.Sheets.hasOwnProperty(sheet)) {
+          fromTo = workbook.Sheets[sheet]['!ref'];
+          console.log(fromTo);
+          persons = persons.concat(XLSX.utils.sheet_to_json(workbook.Sheets[sheet]));
+          // break; // 如果只取第一张表，就取消注释这行
+        }
+      }
+      console.log(persons);
+      console.log("----------");
+      console.log(JSON.stringify(persons));
+      console.log("----------");
+      passexceldata(persons);
+    };
+
+    // 以二进制方式打开文件
+    fileReader.readAsBinaryString(files[0]);
+
+  });
+
+  $('#open').click(function() {
+     $('#excel-file').click();
+  });
+
+  var addcloth;
+  var clothcnt;
+
+  function passexceldata(persons) {
+    addcloth = persons;
+    ans = new Array();
+    ans['excel'] = persons;
+    fillform(ans);
+  }
+  
+  function fillform(result) {
+    clothcnt = result['excel'].length;
+    for(var i=0;i<result['excel'].length;i++){
+      $('#addline').click();
+      var tempstr = "clothid"+cnt.toString();
+      $('#'+tempstr).val(result['excel'][i]['新到产品ID']);
+      tempstr = "clothamount"+cnt.toString();
+      $('#'+tempstr).val(result['excel'][i]['新到产品数量']);
+    }
+
+  }
+
+
+  $('#submitdata').click(function(){
+    if(needvalidate().form()){
+      $.ajax({
+        url:"/WMS/pages/forms/addcloth.php",
+        data: {
+          'cnt' : clothcnt,
+          'excel': addcloth,
+        },
+        async:false,
+        type:"GET",
+        dataType: "json",
+        success:function(result){
+          alert(result);
+          //alertsuccessmessage(temparray[2]);
+          //alert(result[0]);
+          //console.log(result['excel'].length);
+          //console.log(result['excel'][0]['新到产品ID']);
+          //fillform(result);
+
+        },
+        error:function(result){
+          alert("pass failed!");
+        }
+      });
+    }
+    else {
+      alert("not filled");
+    }
+  });
+
+
+  function addvalidate() {
+    return $('#quickForm').validate({
+      rules: {
+        password: {
+          required: true
+          // minlength: 5
+        },
+      },
+      messages: {
+        password: {
+          required: "Please provide Administrator's password"
+          // minlength: "Your password must be at least 5 characters long"
+        },
+        terms: "Please accept our terms"
+      },
+      errorElement: 'span',
+      errorPlacement: function (error, element) {
+        error.addClass('invalid-feedback');
+        element.closest('.form-group').append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass('is-invalid');
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass('is-invalid');
+      }
+    });
+
+
+
+  }
+
+
+  function needvalidate() {
+    return $('#quickForm').validate({
+      rules: {
+        username: {
+          required: true
+        },
+        useraddress: {
+          required: true
+          // minlength: 5
+        },
+        terms: {
+          required: true
+        },
+        inputid:{
+          required: true
+        },
+        inputamount:{
+          required: true
+        },
+      },
+      messages: {
+        username: {
+          required: "Please enter Administrator's name"
+          // email: "Please enter a vaild email address"
+        },
+        useraddress: {
+          required: "Please provide Administrator's password"
+          // minlength: "Your password must be at least 5 characters long"
+        },
+        inputid:{ //注释了jquery-validation的670行
+          required: "Please provide cloth's id"
+        },
+        inputamount:{
+          required: "Please provide cloth's amount"
+        },
+        terms: "Please accept our terms"
+      },
+      errorElement: 'span',
+      errorPlacement: function (error, element) {
+        error.addClass('invalid-feedback');
+        element.closest('.form-group').append(error);
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass('is-invalid');
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass('is-invalid');
+      }
+    });
+
+  }
+
+
+  var cnt=0;
+
+  $('#addline').click(function(){
+    cnt++;
+    // var temp = "orderid"+cnt.toString();
+    $('#divpart').append(
+      '<div class=\"form-group\" id=\"orderid'+cnt.toString()+'\">' +
+      "<label >"+"请输入服装 "+cnt+" 的ID"+"</label>" +
+      '<input type=\"text\" name=\"inputid\" class=\"form-control\" placeholder=\"Enter ID\" id=\"clothid'+cnt.toString()+'\">' +
+      "</div>"+
+      '<div class=\"form-group\" id=\"orderamount'+cnt.toString()+'\">' +
+      "<label >"+"请输入服装 "+cnt+" 的数量"+"</label>" +
+      '<input type=\"text\" name=\"inputamount\" class=\"form-control\" placeholder=\"Enter Amount\" id=\"clothamount'+cnt.toString()+'\">' +
+      "</div>"
+    )
+    // alert($('.form-group').attr('class'));
+  });
+
+  $('#deleteline').click(function(){
+    if(cnt>=1){
+      var temp = "orderid"+cnt.toString();
+      $("#"+temp).remove();
+      temp = "orderamount"+cnt.toString();
+      $("#"+temp).remove();
+      cnt--;
+    }
+  });
+
+
+  class ValidateO {
+    call () {
+      needvalidate().form();
+    }
+  }
+
+  class Decorator {
+
+    constructor (validateO) {
+      this.val = validateO;
+    }
+
+    call () {
+      this.addV();
+      this.val.call();
+    }
+
+    addV () {
+      addvalidate().form();
+    }
+  }
+
+  class Client {
+    constructor () {
+      const phone = new ValidateO();
+      this.validateO = new Decorator(phone);
+    }
+
+    main () {
+      this.decorator.call();
+    }
+  }
+
+  $('#submt').click(function(){
+    const client = new Client();
+     client.main();
+  })
+
+
+
+  /*
+  function getNow(s) {
+    return s < 10 ? '0' + s: s;//判断加前面0
+  }
+
+  function gettime() {//创建以时间为key值的订单号
+    var myDate = new Date();
+    var year=myDate.getFullYear();        //获取当前年
+    var month=myDate.getMonth()+1;   //获取当前月
+    var date=myDate.getDate();            //获取当前日
+    var h=myDate.getHours();              //获取当前小时数(0-23)
+    var m=myDate.getMinutes();          //获取当前分钟数(0-59)
+    var s=myDate.getSeconds();
+    var now=year+getNow(month)+getNow(date)+getNow(h)+getNow(m)+getNow(s);
+    return now;
+  }
+
+  function getinput(){
+    var temparray =new Array();
+    temparray[0] = $('#username').val();
+    temparray[1] = $('#useraddress').val();
+    temparray[2] = gettime();
+    temparray[3] = new Array();
+    temparray[4] = new Array();
+    for(var i=1;i<=cnt;i++){
+      var tempstr = "clothid"+cnt.toString();
+      temparray[3][i] = $('#'+tempstr).val();
+      tempstr = "clothamount"+cnt.toString();
+      temparray[4][i] = $('#'+tempstr).val();
+    }
+    // temparray['username'] = $('#username').val();
+    // temparray['useraddress'] = $('#useraddress').val();
+    // temparray['time'] = gettime();
+    // temparray['clothid'] = new Array();
+    // temparray['clothamount'] = new Array();
+    // for(var i=1;i<=cnt;i++){
+    //   var tempstr = "clothid"+cnt.toString();
+    //   temparray['clothid'][i] = $('#'+tempstr).val();
+    //   tempstr = "clothamount"+cnt.toString();
+    //   temparray['clothamount'][i] = $('#'+tempstr).val();
+    // }
+    return temparray;
+  }
+
+
+
+  var table;
+  $('#submitdata').click(function(){
+    var temparray = getinput();
+    if(needvalidate().form()){
+      if(checkexist()){
+        if(checkamount()){
+          $.ajax({
+            url:"/myproject/pages/forms/updatedb.php",
+            data: {
+              'cnt': cnt,
+              'temparray': temparray,//为什么不支持key-value的数组？？？？
+            },
+            async:false,
+            type:"GET",
+            dataType: "json",
+            success:function(result){
+              alertsuccessmessage(temparray[2]);
+              alert(result);
+
+            },
+            error:function(result){
+              alert("update failed!");
+            }
+          });
+        }
+      }
+
+    }
+    else {
+      alert("not filled");
+    }
+  });
+
+
+  $("#dangermodel").attr("style","display:none;");//隐藏#dangermodel按钮
+  $("#warningmodel").attr("style","display:none;");//隐藏#waringmodel按钮
+  $("#successmodel").attr("style","display:none;");//隐藏#successmodel按钮
+
+  function checkexist(){
+    $('#dangermessage').empty();
+    var temparray = getinput();
+    var cntt = 0;
+    var flag = true;
+    for(var i=1;i<=cnt;i++){
+      if(table[temparray[3][i]]==null){
+        flag = false;
+        cntt++;
+      }
+    }
+    if(flag){
+      return true;
+    }
+    else{
+      $('#dangermessage').append(
+        '<p id="dangermessage-detail">'
+      );
+      for(var i=1;i<=cntt;i++){
+        $('#dangermessage').append(
+          "danger "+i+"  cloth ID: '"+temparray[3][i]+"'  does not exist"//按行输出异常
+        );
+      }
+      $('#dangermessage').append(
+        '</p>'
+      );
+      $('#dangermodel').click();//触发弹窗
+      return false;
+    }
+  }
+
+  function checkamount(){
+    $('#warningmessage').empty();
+    var temparray = getinput();
+    var cntt = 0;
+    var flag = true;
+    for(var i=1;i<=cnt;i++){
+      if(parseInt(table[temparray[3][i]]['amount'])<parseInt(temparray[4][i])){//字符串转数字进行比较
+        flag = false;
+        cntt++;
+      }
+    }
+    if(flag == true){
+      return true;
+    }
+    else{
+      $('#warningmessage').append(
+        '<p id="waringmessage-detail">'
+      );
+      for(var i=1;i<=cntt;i++){
+        $('#warningmessage').append(
+          "warning "+i+"  cloth ID: '"+temparray[3][i]+"'  its amount "+temparray[4][i]+"  is more than its limit :"+table[temparray[3][i]]['amount']//按行输出异常
+        );
+      }
+      $('#warningmessage').append(
+        '</p>'
+      );
+      $('#warningmodel').click();
+      return false;
+    }
+  }
+
+  function alertsuccessmessage(orderid){
+    $('#successmessage').append(
+      '<p>Order id is'+"' "+orderid+" '"+'</p>'
+    );
+    $('#successmodel').click();
+  }
+
+
+
+
+
+  $('#submitdata2').click(function(){
+    $('#dangermessage').empty();
+    var temparray = getinput();
+    var cntt = 0;
+    for(var i=1;i<=cnt;i++){
+      if(table[temparray[3][i]]==null){
+        cntt++;
+      }
+    }
+    $('#dangermessage').append(
+      '<p id="dangermessage-detail">'
+    );
+    for(var i=1;i<=cntt;i++){
+      $('#dangermessage').append(
+        "danger "+i+"  cloth ID: '"+temparray[3][i]+"'  does not exist"//按行输出异常
+      );
+    }
+    $('#dangermessage').append(
+      '</p>'
+    );
+
+    $('#dangermodel').click();//触发弹窗
+
+  });
+
+  $('#submitdata3').click(function(){
+    $('#warningmessage').empty();
+    var temparray = getinput();
+    var cntt = 0;
+    for(var i=1;i<=cnt;i++){
+      if(parseInt(table[temparray[3][i]]['amount'])<parseInt(temparray[4][i])){//字符串转数字进行比较
+        cntt++;
+      }
+    }
+    $('#warningmessage').append(
+      '<p id="waringmessage-detail">'
+    );
+    for(var i=1;i<=cntt;i++){
+      $('#warningmessage').append(
+        "warning "+i+"  cloth ID: '"+temparray[3][i]+"'  its amount "+temparray[4][i]+"  is more than its limit :"+table[temparray[3][i]]['amount']//按行输出异常
+      );
+    }
+    $('#warningmessage').append(
+      '</p>'
+    );
+    $('#warningmodel').click();
+  });
+
+
+  $.ajax({
+    url:"/myproject/pages/forms/validation.php",
+    async:false,
+    dataType: "json",
+    success:function(result){
+      table = result;
+    },
+    error:function(result){
+      alert("get table failed!");
+    }
+  });
+
+
+  var ResultState = function(){
+    var States = {
+      state0 : function(str){
+        alert(str);
+      },
+      checkinput : function(judge){
+        return needvalidate().form();
+      },
+      checkexist : function(judge){
+        if(judge){
+          $('#dangermessage').empty();
+          var temparray = getinput();
+          var cntt = 0;
+          var flag = true;
+          for(var i=1;i<=cnt;i++){
+            if(table[temparray[3][i]]==null){
+              flag = false;
+              cntt++;
+            }
+          }
+          if(flag){
+            return true;
+          }
+          else{
+            $('#dangermessage').append(
+              '<p id="dangermessage-detail">'
+            );
+            for(var i=1;i<=cntt;i++){
+              $('#dangermessage').append(
+                "danger "+i+"  cloth ID: '"+temparray[3][i]+"'  does not exist"//按行输出异常
+              );
+            }
+            $('#dangermessage').append(
+              '</p>'
+            );
+            $('#dangermodel').click();//触发弹窗
+            return false;
+          }
+        }
+        return false;
+      },
+      checkamount : function(judge){
+        if(judge){
+          $('#warningmessage').empty();
+          var temparray = getinput();
+          var cntt = 0;
+          var flag = true;
+          for(var i=1;i<=cnt;i++){
+            if(parseInt(table[temparray[3][i]]['amount'])<parseInt(temparray[4][i])){//字符串转数字进行比较
+              flag = false;
+              cntt++;
+            }
+          }
+          if(flag == true){
+            return true;
+          }
+          else{
+            $('#warningmessage').append(
+              '<p id="waringmessage-detail">'
+            );
+            for(var i=1;i<=cntt;i++){
+              $('#warningmessage').append(
+                "warning "+i+"  cloth ID: '"+temparray[3][i]+"'  its amount "+temparray[4][i]+"  is more than its limit :"+table[temparray[3][i]]['amount']//按行输出异常
+              );
+            }
+            $('#warningmessage').append(
+              '</p>'
+            );
+            $('#warningmodel').click();
+            return false;
+          }
+        }
+        return false;
+      },
+    };
+    function show(result,str){
+      States[result] && States[result](str);
+    }
+    function runcheck(result,judge){
+      States[result] && States[result](judge);
+    }
+    return{
+      show : show ,
+      runcheck : runcheck
+    }
+  }();
+
+
+  $('#status').click(function () {
+    // ResultState.show('state0',"wybnmsl");
+    var temparray = getinput();
+    var judge = true;
+    judge = ResultState.runcheck('checkinput',judge);
+    judge = ResultState.runcheck('checkexist',judge);
+    judge = ResultState.runcheck('checkamount',judge);
+    if(judge){
+      alertsuccessmessage(temparray[2]);
+      //写入后台
+      // $.ajax({
+      //   url:"/myproject/pages/forms/updatedb.php",
+      //   data: {
+      //     'cnt': cnt,
+      //     'temparray': temparray,//为什么不支持key-value的数组？？？？
+      //   },
+      //   async:false,
+      //   type:"GET",
+      //   dataType: "json",
+      //   success:function(result){
+      //     alertsuccessmessage(temparray[2]);
+      //     alert(result);
+      //
+      //   },
+      //   error:function(result){
+      //     alert("update failed!");
+      //   }
+      // });
+    }
+  });
+*/
+
+</script>
+
+
+</body>
+</html>
